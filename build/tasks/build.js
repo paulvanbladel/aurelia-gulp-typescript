@@ -4,7 +4,8 @@ var changed = require('gulp-changed');
 var plumber = require('gulp-plumber');
 var to5 = require('gulp-babel');
 var ts = require('gulp-typescript');
-var tsProject = ts.createProject('tsconfig.json');
+//TODO check what second param is doing...
+var tsProject = ts.createProject('tsconfig.json', {typescript:require('typescript')});
 var sourcemaps = require('gulp-sourcemaps');
 var paths = require('../paths');
 var compilerOptions = require('../babel-options');
@@ -17,12 +18,11 @@ var assign = Object.assign || require('object.assign');
 gulp.task('build-system', function () {
   return gulp.src(paths.source)
     .pipe(plumber())
-    .pipe(changed(paths.output, {extension: '.js'}))
-    .pipe(sourcemaps.init({loadMaps: true}))
+    //.pipe(changed(paths.output, {extension: '.js'}))
+    //.pipe(sourcemaps.init({loadMaps: true}))
     //.pipe(ts(assign({}, compilerOptions, {module:'system'})))
     .pipe(ts(tsProject))
-
-    .pipe(sourcemaps.write({includeContent: true}))
+    //.pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output));
 });
 

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
+     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "noEmitOnError": true,
@@ -8,6 +8,6 @@
     "noExternalResolve": true,
     "declarationFiles": false,
     "target": "es5",
-    "module": "system"
+    "module": "commonjs"
   }
 }

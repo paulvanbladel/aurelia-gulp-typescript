@@ -1,18 +1,22 @@
 System.config({
   "defaultJSExtensions": true,
-  "transpiler": "typescript",
+  "transpiler": "babel",
   "babelOptions": {
     "optional": [
-      "es7.decorators",
-      "es7.classProperties",
       "runtime"
     ]
   },
   "paths": {
     "*": "dist/*",
+    /*"dist": "dist",*/
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
-  }
+  },
+  /*"packages": {
+    "src": {
+      "defaultExtension": "ts"
+    }
+  }*/
 });
 
 System.config({
