@@ -8,15 +8,9 @@ System.config({
   },
   "paths": {
     "*": "dist/*",
-    /*"dist": "dist",*/
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
-  },
-  /*"packages": {
-    "src": {
-      "defaultExtension": "ts"
-    }
-  }*/
+  }
 });
 
 System.config({
@@ -30,6 +24,7 @@ System.config({
     "aurelia-framework": "github:aurelia/framework@0.14.0",
     "aurelia-history": "github:aurelia/history@0.6.1",
     "aurelia-history-browser": "github:aurelia/history-browser@0.6.2",
+    "aurelia-http-client": "github:aurelia/http-client@0.10.2",
     "aurelia-loader": "github:aurelia/loader@0.8.3",
     "aurelia-loader-default": "github:aurelia/loader-default@0.9.3",
     "aurelia-logging": "github:aurelia/logging@0.6.2",
@@ -98,6 +93,10 @@ System.config({
     },
     "github:aurelia/history-browser@0.6.2": {
       "aurelia-history": "github:aurelia/history@0.6.1",
+      "core-js": "npm:core-js@0.9.18"
+    },
+    "github:aurelia/http-client@0.10.2": {
+      "aurelia-path": "github:aurelia/path@0.8.1",
       "core-js": "npm:core-js@0.9.18"
     },
     "github:aurelia/loader-default@0.9.3": {

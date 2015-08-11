@@ -49,6 +49,7 @@
     "yargs": "^2.1.1"
   },
   "jspm": {
+    "directories": {},
     "dependencies": {
       "aurelia-animator-css": "github:aurelia/animator-css@^0.14.1",
       "aurelia-binding": "github:aurelia/binding@^0.8.3",
@@ -59,6 +60,7 @@
       "aurelia-framework": "github:aurelia/framework@^0.14.0",
       "aurelia-history": "github:aurelia/history@^0.6.1",
       "aurelia-history-browser": "github:aurelia/history-browser@^0.6.2",
+      "aurelia-http-client": "github:aurelia/http-client@^0.10.2",
       "aurelia-loader": "github:aurelia/loader@^0.8.3",
       "aurelia-loader-default": "github:aurelia/loader-default@^0.9.1",
       "aurelia-logging": "github:aurelia/logging@^0.6.2",

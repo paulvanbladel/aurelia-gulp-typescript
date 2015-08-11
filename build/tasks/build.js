@@ -16,13 +16,9 @@ var assign = Object.assign || require('object.assign');
 // by errors from other gulp plugins
 // https://www.npmjs.com/package/gulp-plumber
 gulp.task('build-system', function () {
-  return gulp.src(paths.source)
+  return gulp.src(["jspm_packages/**/*.ts", "typings/**/*.d.ts", paths.source])
     .pipe(plumber())
-    //.pipe(changed(paths.output, {extension: '.js'}))
-    //.pipe(sourcemaps.init({loadMaps: true}))
-    //.pipe(ts(assign({}, compilerOptions, {module:'system'})))
     .pipe(ts(tsProject))
-    //.pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output));
 });
 

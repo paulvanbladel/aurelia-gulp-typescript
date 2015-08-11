@@ -1,12 +1,12 @@
-﻿//import Aureliarouter = require("aurelia-router");
-import {Router, RouterConfiguration} from "aurelia-router";
-/*import RouterConfiguration = Aureliarouter.RouterConfiguration;
+﻿import Aureliarouter = require("aurelia-router");
+import RouterConfiguration = Aureliarouter.RouterConfiguration;
 import Router = Aureliarouter.Router;
-*/
-export class App {
-    router: Router;
+
+export class ChildRouter {
+    heading = 'Child Router';
+    router: Aureliarouter.Router;
+
     configureRouter(config: RouterConfiguration, router: Router) {
-        config.title = 'Aurelia';
         config.map([
             { route: ['', 'welcome'], name: 'welcome', moduleId: './welcome', nav: true, title: 'Welcome' },
             { route: 'flickr', name: 'flickr', moduleId: './flickr', nav: true, title: 'Flickr' },
