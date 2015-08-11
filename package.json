@@ -7,16 +7,16 @@
     "navigation",
     "skeleton"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "blog.opinionatedapps.com",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation/issues"
+    "url": "https://github.com/paulvanbladel/aurelia-gulp-typescript/issues"
   },
   "license": "MIT",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "author": "paul van bladel",
   "main": "dist/commonjs/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation"
+    "url": "https://github.com/paulvanbladel/aurelia-gulp-typescript"
   },
   "devDependencies": {
     "aurelia-tools": "^0.1.3",

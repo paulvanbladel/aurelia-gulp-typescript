@@ -4,8 +4,7 @@ var changed = require('gulp-changed');
 var plumber = require('gulp-plumber');
 var to5 = require('gulp-babel');
 var ts = require('gulp-typescript');
-//TODO check what second param is doing...
-var tsProject = ts.createProject('tsconfig.json', {typescript:require('typescript')});
+var tsProject = ts.createProject('tsconfig.json');
 var sourcemaps = require('gulp-sourcemaps');
 var paths = require('../paths');
 var compilerOptions = require('../babel-options');
